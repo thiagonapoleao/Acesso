@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="TratativaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.bean.Rota</class>
+    <class>com.bean.SaidaRota</class>
+    <class>com.bean.Servico</class>
+     <class>com.bean.Motorista</class>
+     <class>com.bean.Veiculo</class>
+      <class>com.bean.Transportadora</class>
+       <class>com.bean.Motoristat</class>
+       <class>com.bean.PrestadorServ</class>
+        <class>com.bean.Login</class>
+        <class>com.bean.SaidaVe</class>
+        <class>com.bean.SaidaPe</class>
+        <class>com.bean.SaidTransp</class>
+       <class>com.bean.EntradaTransport</class>
+      <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://10.16.0.79:3306/acessostcruz?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="default"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="123456"/>
+    </properties>
+  </persistence-unit>
+</persistence>
